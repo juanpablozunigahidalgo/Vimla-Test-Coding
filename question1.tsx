@@ -63,3 +63,16 @@ export class Solution implements api.SolutionInterface {
     return maxPriceDay; // Will return -1 if no valid sell day is found
 } 
 };
+
+
+// Explanation:
+// getBuyDay: This method finds the day where the silver price is the lowest.
+// getSellDay: After determining the best buy day, this method scans the remaining days to find the best sell day (where the price is the highest).
+// Key Considerations:
+// The price to buy should come from a day before the sell day.
+// The code will handle unknown test cases with different lengths of days and price patterns.
+// With this approach, you'll maximize the profit based on the provided data.
+
+
+
+
